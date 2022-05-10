@@ -1,0 +1,386 @@
+/* keyframes */ 
+@keyframes whackAmole{
+  from{
+    transform: translateX(-30vw);
+  }
+  to{
+    transform: translateX(0vw);
+  }
+}
+@keyframes whackAmole_1{
+  from{
+    transform: translateX(80vw);
+  }
+  to{
+    transform: translateX(0vw);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* desktop */
+@media(max-width:2500px){
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+
+body{
+   background-image: url('green-grass-background-photo.jpg'); 
+   /* display: flex;
+   justify-content: center; */
+}
+
+.title{
+  border: solid white;
+  background-color: beige;
+  /* border-radius: 10%; */
+  /* width: fit-content; */
+  font-size: small;
+  /* margin: 1em 0; */
+  text-align: center;
+  margin-top: 5px;
+  animation: whackAmole 3s linear;
+ 
+}
+.title:hover{
+  border: solid white;
+  background-color: rgb(201, 201, 111);
+  /* border-radius: 10%; */
+  /* width: fit-content; */
+  font-size: small;
+  /* margin: 1em 0; */
+  text-align: center;
+  margin-top: 5px;
+  animation-direction: alternate-reverse;
+  animation: whackAmole 3s infinite;
+ 
+}
+.score_time_button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+.button{
+  /* margin-top: 3em; */
+  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    
+}
+.score_time{
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+    animation: whackAmole 3s linear;
+}
+/* .player_grid{
+ display: flex;
+ justify-content: space-around;
+}*/
+
+.player{
+      /* display: flex;
+      justify-content: space-around; */
+      margin-left: 10px;
+      margin-top: 5px;
+      border: solid white;
+      border-radius: 10%;
+      width: fit-content;
+      background-color: beige;
+      animation: whackAmole_1 3s linear;
+  }
+  .player:hover{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-left: 10px;
+    margin-top: 5px;
+    border: solid rgb(201, 201, 111);
+    border-radius: 10%;
+    width: fit-content;
+    background-color: beige;
+    animation: whackAmole_1 3s linear;
+}
+
+
+.grid{
+  /* border: solid black; */
+  display: grid;
+  grid-gap: none;
+  /* position: fixed; */
+  /* position: relative; */
+  position: absolute;
+  height: 500px;
+  width: 750px;
+  grid-template-columns: repeat(3,auto);
+  padding-left: 10%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  /* animation: whackAmole_1 3s linear; */
+  animation: rotate 3s linear ;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+.circle{
+  /* border: solid red; */
+  border-radius: 50%;
+  background-color:  rgba(255, 157, 0, 0.971);
+
+}
+
+.mole {
+  background-image: url('cute_mole.jpg');
+  background-size: cover;
+  /* animation: whackAmole_1 5s linear; */
+} 
+
+/* .button #start{
+  font-size: large;
+  padding: 15px 30px;
+  background-color: rgba(255, 157, 0, 0.971) ;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+}
+
+.button #stop{
+  font-size: large;
+  padding: 15px 30px;
+  background-color: rgba(255, 157, 0, 0.971) ;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+} */
+button{
+  font-size: x-large;
+  padding: 5px 20px;
+  background-color: rgb(71, 88, 6);
+  border: solid white 2px ;
+  color: white;
+  border-radius: 15%;
+  outline: none;
+  animation: whackAmole_1 3s linear;
+}
+button:hover{
+font-size: x-large;
+padding: 5px 20px;
+background-color: rgb(178, 200, 92);
+border: solid white 2px ;
+color: white;
+border-radius: 15%;
+outline: none;
+}
+h2{
+  border: solid white 2px;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 10%;
+}
+h2:hover{
+border: solid white 2px;
+background-color: rgb(167, 143, 112);
+padding: 15px;
+border-radius: 10%;
+}
+p{
+  font-size: x-large;
+  /* animation: whackAmole_1 5s linear; */
+  /* border: solid white 2px; */
+  /* background-color: antiquewhite; */
+  /* padding: 15px; */
+  /* border-radius: 3px; */
+}
+}
+
+
+
+/* mid */
+@media(max-width:800px){
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  
+  body{
+     background-image: url('green-grass-background-photo.jpg'); 
+     /* display: flex;
+     justify-content: center; */
+  }
+  
+  .title{
+    border: solid white;
+    background-color: beige;
+    /* border-radius: 10%; */
+    /* width: fit-content; */
+    font-size: small;
+    /* margin: 1em 0; */
+    text-align: center;
+    margin-top: 5px;
+    animation: whackAmole 3s linear;
+   
+  }
+  .title:hover{
+    border: solid white;
+    background-color: rgb(201, 201, 111);
+    /* border-radius: 10%; */
+    /* width: fit-content; */
+    font-size: small;
+    /* margin: 1em 0; */
+    text-align: center;
+    margin-top: 5px;
+    animation-direction: alternate-reverse;
+    animation: whackAmole_1 3s infinite;
+   
+  }
+  .score_time_button{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2px;
+  }
+  .button{
+    /* margin-top: 3em; */
+    text-align: center;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      
+  }
+  .score_time{
+      display: flex;
+      justify-content: center;
+      margin-left: 50%;
+      animation: whackAmole 5s linear;
+  }
+  /* .player_grid{
+   display: flex;
+   justify-content: space-around;
+  }*/
+  
+  .player{
+        /* display: flex;
+        justify-content: space-around; */
+        margin-left: 10px;
+        margin-top: 5px;
+        border: solid white;
+        border-radius: 10%;
+        width: fit-content;
+        background-color: beige;
+        animation: whackAmole_1 3s linear;
+    }
+    .player:hover{
+      /* display: flex;
+      justify-content: space-around; */
+      margin-left: 10px;
+      margin-top: 5px;
+      border: solid rgb(201, 201, 111);
+      border-radius: 10%;
+      width: fit-content;
+      background-color: beige;
+      animation: whackAmole_1 3s linear;
+  }
+  
+  
+  .grid{
+    /* border: solid black; */
+    display: grid;
+    grid-gap: none;
+    /* position: fixed; */
+    /* position: relative; */
+    position: absolute;
+    /* height: 500px;
+    width: 750px; */
+    grid-template-columns: repeat(3,auto);
+    padding-left: 10%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    /* animation: whackAmole_1 3s linear; */
+    animation: rotate 3s linear ;
+    animation-duration: 0.7s;
+  animation-direction: reverse;
+  }
+  .circle{
+    /* border: solid red; */
+    border-radius: 50%;
+    background-color:  rgba(255, 157, 0, 0.971);
+  
+  }
+  
+  .mole {
+    background-image: url('cute_mole.jpg');
+    background-size: cover;
+    /* animation: whackAmole_1 5s linear; */
+  } 
+  
+  /* .button #start{
+    font-size: large;
+    padding: 15px 30px;
+    background-color: rgba(255, 157, 0, 0.971) ;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .button #stop{
+    font-size: large;
+    padding: 15px 30px;
+    background-color: rgba(255, 157, 0, 0.971) ;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+  } */
+  button{
+    font-size: x-large;
+    padding: 5px 20px;
+    background-color: rgb(71, 88, 6);
+    border: solid white 2px ;
+    color: white;
+    border-radius: 15%;
+    outline: none;
+    animation: whackAmole_1 3s linear;
+  }
+  button:hover{
+  font-size: x-large;
+  padding: 5px 20px;
+  background-color: rgb(178, 200, 92);
+  border: solid white 2px ;
+  color: white;
+  border-radius: 15%;
+  outline: none;
+  }
+  h2{
+    border: solid white 2px;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 10%;
+  }
+  h2:hover{
+  border: solid white 2px;
+  background-color: rgb(167, 143, 112);
+  padding: 15px;
+  border-radius: 10%;
+  }
+  p{
+    font-size: x-large;
+    }
+  }
